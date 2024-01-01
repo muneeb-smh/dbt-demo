@@ -1,3 +1,10 @@
+{{ 
+    config(
+        target_database='dbt-cloud',
+        target_schema='dbt_shussain',
+        materialized='table'
+    ) 
+}}
 with 
 
 source as (

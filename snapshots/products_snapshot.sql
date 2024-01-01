@@ -3,7 +3,7 @@
 {{
     config(
       target_database='dbt-cloud',
-      target_schema='dbt-shussain',
+      target_schema='dbt_shussain',
       unique_key='product_id',
       strategy='check',
       check_cols=['all'],
