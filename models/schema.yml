@@ -1,0 +1,17 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+
+sources: 
+  - name: dbt-data
+    tables: 
+      - name: customers
+      - name: sellers
+      - name: products
+      - name: product_translations
+      - name: orders
+      - name: order_items
+      - name: order_payments
+      - name: order_reviews
