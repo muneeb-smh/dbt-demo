@@ -1,4 +1,4 @@
-{% snapshot sellers_snapshot %}
+{% snapshot snapshot__sellers %}
 
 {{
     config(
@@ -10,6 +10,11 @@
     )
 }}
 
-select * from {{ source('dbt-data', 'sellers') }}
+select 
+    seller_id,
+    seller_zip_code_prefix,
+    seller_city,
+    seller_state
+from {{ source('dbt-data', 'sellers') }}
 
 {% endsnapshot %}
